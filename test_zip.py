@@ -62,14 +62,12 @@ def put_in_archive_folder(path_arch=path_, root_arch=root_):  # создаю а�
     zip_p.close()  # закрыть архив на запись
     print('я закончил создавать архив')
     return list_zip, zip_p, pdf_len, pdf_text, pdf_size, csv_size, headers_csv, xlsx_size, value_xlsx
-    # print(list_zip)
 
 
 # Проверки
-# папака содержит столько же файлов, сколько архив
-def test_file_in_archive(len_list_zip, pdf_len, pdf_text, pdf_size, csv_size, headers_csv, xlsx_size,
-                         value_xlsx):
+def test_file_in_archive(len_list_zip, pdf_len, pdf_text, pdf_size, csv_size, headers_csv, xlsx_size, value_xlsx):
     print('я запустил тест')
+    # папака содержит столько же файлов, сколько архив
     assert len_list == len_list_zip
     # имена файлов в архиве соответсвуют именам файлов в исходной папке
     for i in range(len(n)):  # итерация по i где i от 0 до длинны n
