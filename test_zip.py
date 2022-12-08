@@ -98,8 +98,6 @@ def test_file_in_archive(len_list_zip, pdf_len, pdf_text, pdf_size, csv_size, he
             assert xlsx_size_zip == xlsx_size
         else:
             pass
-        # закрытие файла
-        zip_p.close()
         # удаление файла
     print('тест прошел успешно')
     # os.remove(os.path.join(path_, 'zip_1.zip'))
